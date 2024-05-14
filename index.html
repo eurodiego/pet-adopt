@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET Adopt</title>
+    <link rel="shortcut icon" href="./static/img/dog.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body >
+    <header class="header">
+        <nav>
+            <div id="logo">
+                <a href="">
+                    <i class="fas fa-dog"></i>
+                    <span class="logo-text">
+                        PET Adopt
+                    </span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#ultimos" >Ultimos ingresados</a>
+                </li>
+                <li>
+                    <a href="./register.html">Registrarse</a>
+                </li>
+                <li>
+                    <!-- Enlace externo -->
+                    <a href="#" target="_blank" class="btn-cac">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="login-text">
+                            Iniciar sesión
+                        </span>
+                    </a>
+                </li>
+            </ul>            
+        </nav>
+
+    </header>
+    <!-- Indicar contenido principal de la pagina -->
+    <main> 
+        <section id="banner" class="d-flex">
+            <div class="banner-card container">
+                <h1>A quién te gustaría adoptar?</h1>
+                <section id="ultimos">
+                    <div class="container">
+                        <div id="ultimos-list" class="choose-pets-grid">
+                            <div class="pet-item">
+                                <a href="./pet-detail.html" >
+                                    <img  class="pet-item-img" src="./static/img/cachorro-inicio.jpg" alt="Cachorro">
+                                </a>
+                            </div>
+                            <div class="pet-item">
+                                <a href="./pet-detail.html" >
+                                    <img  class="pet-item-img" src="./static/img/gatito-inicio.jpg" alt="Gatito" >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="search" class="container">
+            <h2 class="search-title">Qué estás buscando?</h2>
+            <input type="text" class="input-search" placeholder="Buscar...">
+        </section>
+
+        <!-- indica una seccion del contenido principal -->
+        <section id="ultimos" name="ultimos" >
+            <div class="container">
+                <h2 class="h2-subtitle">Los últimos que ingresaron</h2>                
+                <div id="ultimos-list" class="pets-grid">
+                    <div class="pet-item">
+                        <a href="./pet-detail.html" >
+                            <img  class="pet-item-img" src="./static/img/negrito.jpg" alt="Negrito">
+                            <div class="pet-item-detail">
+                                <p class="pet-item-detail-title">Negrito</p>
+                                <p class="pet-item-detail-subtitle">5 años</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pet-item">
+                        <a href="./pet-detail.html" >
+                            <img  class="pet-item-img" src="./static/img/manchado.jpg" alt="Manchado" >
+                            <div class="pet-item-detail">
+                                <p class="pet-item-detail-title">Manchado</p>
+                                <p class="pet-item-detail-subtitle">4 años</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pet-item">
+                        <a href="./pet-detail.html" >
+                            <img  class="pet-item-img" src="./static/img/marroncito.jpg" alt="Marroncito" >
+                            <div class="pet-item-detail">
+                                <p class="pet-item-detail-title">Marroncito</p>
+                                <p class="pet-item-detail-subtitle">7 años</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pet-item">
+                        <a href="./pet-detail.html">
+                            <img  class="pet-item-img" src="./static/img/blanquito.jpg" alt="Blanquito" >
+                            <div class="pet-item-detail">
+                                <p class="pet-item-detail-title">Blanquito</p>
+                                <p class="pet-item-detail-subtitle">10 años</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer">
+        <nav>
+            <div></div>
+            <ul class="nav-links">
+                <li>
+                    <a href="">Requisitos para adoptar</a>
+                </li>
+                <li>
+                    <a href="">Colaboraciones a refugios</a>
+                </li>
+                <li>
+                    <a href="">Ayuda</a>
+                </li>
+            </ul>            
+        </nav>
+    </footer>
+</body>
+</html>
