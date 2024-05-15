@@ -79,7 +79,7 @@ nav {
     color: var(--secondary-color) ;
 }
 
-.btn-cac {
+.btn-pet {
     background-color: var(--primary-color);
     padding: 10px;
     color: #FFF;
@@ -87,7 +87,7 @@ nav {
     cursor: pointer;
 }
 
-.btn-cac:hover {
+.btn-pet:hover {
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
 }
@@ -464,7 +464,7 @@ nav {
         width: 100%;
     }
 
-    .btn-cac {
+    .btn-pet {
         font-size: 1vh;
     }
     #footer {

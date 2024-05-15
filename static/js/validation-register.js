@@ -55,4 +55,9 @@ function succ() {
     document.querySelector("#success").innerHTML = "Datos enviados con éxito!";
     document.querySelector("#btn-send").innerHTML = "Registrado"
     document.querySelector("#btn-send").disabled = true;
+    setTimeout(irAHome, 2500);
+}
+
+function irAHome() {
+    window.location.href = "index.html?email=" + document.querySelector("#email").value;
 }

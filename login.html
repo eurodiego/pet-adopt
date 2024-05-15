@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - PET Adopt</title>
+    <title>Login - PET Adopt</title>
     <link rel="shortcut icon" href="./static/img/dog.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,20 +32,8 @@
     </header>
     <main>
         <section class="form-wrapper">
-            <h2>Registro</h2>
+            <h2>Ingreso</h2>
             <form action="#" id="formRegister" method="GET" novalidate>
-                <div class="form-control">
-                    <label>Nombre</label>
-                    <input type="text" name="firstname" id="firstname" value="Juan">
-                </div>
-                <div class="error" id="error-firstname"></div>
-
-                <div class="form-control">
-                    <label>Apellido</label>
-                    <input type="text" name="lastname" id="lastname" value="Perez">
-                </div>
-                <div class="error" id="error-lastname"></div>
-
                 <div class="form-control">
                     <label>Email</label>
                     <input type="email" name="email" id="email" value="juan@perez.com">
@@ -56,24 +44,8 @@
                     <label>Contraseña</label>
                     <input type="password" name="password" id="password" value="Jp1234">
                 </div>
-
                 <div class="error" id="error-password"></div>
-                <div class="form-control">
-                    <label id="label-birthdate">Fecha de Nacimiento</label>
-                    <input type="date" name="birthdate" id="birthdate">
-                </div>
 
-                <div class="error" id="error-birthdate"></div>
-                <div class="form-control">
-                    <label id="label-nombre-favorito">Nombre favorito</label>
-                    <input type="text" name="nombre-favorito" id="nombre-favorito">
-                </div>
-                <div class="form-terms">
-                    <div class="terms">
-                        <input type="checkbox" id="terms">
-                        <label for="terms">Acepto términos y condiciones</label>
-                    </div>
-                </div>
                 <button type="button" id="btn-send">Registrarse</button>
                 <div class="success" id="success"></div>
                 <div class="form-help">
@@ -82,5 +54,5 @@
             </form>
         </section>
     </main>
-    <script src="./static/js/validation-register.js"></script>
+    <script src="./static/js/validation-login.js"></script>
 </body>
