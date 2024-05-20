@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CaC Movies - Detalle de pelicula</title>
+    <title>PET Adopt - Detalle de la mascota</title>
     <link rel="shortcut icon" href="./static/img/dog.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,6 @@
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="stylesheet" href="./static/css/index.css">
 </head>
 <body>
     <header class="header">
@@ -46,25 +45,25 @@
 
     </header>
     <main>
-        <section id="banner-movie">
+        <section id="banner-pet">
             <div>
-                <img src="../static/img/mario.jpg" alt="Pelicula de mario">
+                <img class="pet-item-img" id="foto">
             </div>
             <div>
-                <h2>The Super Mario Bros. Movie</h2>            
+                <h2 id="nombre1" name = "nombre1"></h2>
             </div>
         </section>
 
         <section id="more-info">
             <div>
-                <iframe width="560" 
+                <!-- <iframe width="560" 
                         height="315" 
                         src="https://www.youtube.com/embed/8YQM6VlfiqM?si=TxljAzl4ZlS7M4gQ"
                         title="YouTube video player" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen>
-                </iframe>
+                </iframe> -->
             </div>
             <div>
                 <table border="2">
@@ -75,25 +74,30 @@
                     </thead>
                     <tbody >
                         <tr>
-                            <td><strong>Status</strong></td>
-                            <td>Released</td>
+                            <td><strong>Nombre</strong></td>
+                            <td id = "nombre2" name = "nombre2"></td>
                         </tr>
                         <tr>
-                            <td><strong>Original Language</strong></td>
-                            <td>English</td>
+                            <td><strong>Edad</strong></td>
+                            <td id = "edad" name = "edad"></td>
                         </tr>
                         <tr>
-                            <td><strong>Budget</strong></td>
-                            <td> $100.000.000,00</td>
+                            <td><strong>Sexo</strong></td>
+                            <td id = "sexo" name = "sexo"></td>
                         </tr>
                         <tr>
-                            <td><strong>Revenue</strong></td>
-                            <td> $1.347.013.866,00</td>
+                            <td><strong>Tamaño</strong></td>
+                            <td id = "tamanio" name = "tamanio"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Información</strong></td>
+                            <td id = "info" name = "info"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
     </main>    
+    <script type="text/javascript" src="static/js/pet-detail.js"></script>
 </body>
 </html>
