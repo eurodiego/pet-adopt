@@ -178,14 +178,11 @@ table th {
     font-size: 16px;
     height: 50px;
     margin: 20px 0px;
-    /* QUITA EL EFECTO DE BORDE AL INPUT AL SELECCIONARLO */
     outline: none;
     padding: 0px 20px;
     width: 70%;
 }
 
-
-/* SELECTO AGRUPADO */
 #ultimos,#video {
     text-align: center;
 }
@@ -207,14 +204,12 @@ table th {
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     justify-items: center;
-    row-gap: 20px;
+    row-gap: 40px;
+    column-gap: 40px;
 }
 
 .pet-item {
     border-radius: 20px;
-    /* cualquier contenido que se extienda más allá de los límites del contenedor será ocultado y 
-    no será visible para el usuario. Esto puede ser útil para crear efectos de recorte 
-    o para ocultar contenido que no se desea que sea visible. */
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -228,9 +223,6 @@ table th {
 
 .pet-item-img {
     width: 300px;
-    /* en CSS se utiliza para especificar cómo se debe redimensionar y ajustar el 
-    contenido de un elemento <img> o <video>dentro de su contenedor, 
-    manteniendo su relación de aspecto original. */
     object-fit: cover;
 }
 
@@ -241,7 +233,7 @@ table th {
     max-height: 100%;
     line-height: 15px;
     background-color: var(--third-bis-color);
-    transition: bottom 0.4s ease-in-out;
+    transition: bottom 1s ease-in-out;
     width: 100%;
 }
 
@@ -329,10 +321,6 @@ table th {
     color: white;
     font-size: 12px;
     margin: 3px 0px;
-}
-
-.pet-item-detail-subtitle-v2::after {
-    content: '🌟';
 }
 
 #footer {
@@ -427,6 +415,7 @@ p {
 .req-h2 {
     font-size: 1.5vw;
 }
+
 @media screen and (max-width: 767px) {
     h2 {
         font-size: 3vw;
