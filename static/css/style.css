@@ -68,6 +68,7 @@ nav {
     height: 60px;
     align-items: center;
     padding: 0px 50px;
+    font-weight: bold;
 }
 
 .req-list-style {

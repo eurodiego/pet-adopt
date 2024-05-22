@@ -46,9 +46,8 @@ function succ() {
 }
 
 function irAHome() {
-    window.location.href = "index.html?email=" + email;
-}
-
-function irAHome() {
-    window.location.href = "index.html?email=" + email;
+    if(email != null && email.trim() !== '' && email != "null")
+        window.location.href = "index.html?email=" + email;
+    else
+        window.location.href = "index.html";
 }
