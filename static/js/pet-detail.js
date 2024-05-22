@@ -2,9 +2,9 @@ const perrosJsonArray = [{"Nombre":"Renzo","Edad":"1 año y medio","Sexo":"macho
 const urlParams = new URLSearchParams(window.location.search);
 const email = urlParams.get("email");
 const nom = urlParams.get("nombre");
-
+const nomb = nom.replace("_", " ");
 console.log(email);
-console.log(nom);
+console.log(nomb);
 
 if(email != null && email.trim() !== '') {
     document.querySelector("#registrarse").innerHTML = email;
@@ -12,12 +12,12 @@ if(email != null && email.trim() !== '') {
     document.querySelector("#login").innerHTML = "";
 }
 if(nom != null && nom.trim() !== '') {
-    document.querySelector("#nombre1").innerHTML = nom;
-    document.querySelector("#nombre2").innerHTML = nom;
-    document.querySelector("#edad").innerHTML = perrosJsonArray.find(item => item.Nombre === nom).Edad;
-    document.querySelector("#sexo").innerHTML = perrosJsonArray.find(item => item.Nombre === nom).Sexo;
-    document.querySelector("#tamanio").innerHTML = perrosJsonArray.find(item => item.Nombre === nom).Tamaño;
-    document.querySelector("#info").innerHTML = perrosJsonArray.find(item => item.Nombre === nom).Info;
+    document.querySelector("#nombre1").innerHTML = nomb;
+    document.querySelector("#nombre2").innerHTML = nomb;
+    document.querySelector("#edad").innerHTML = perrosJsonArray.find(item => item.Nombre === nomb).Edad;
+    document.querySelector("#sexo").innerHTML = perrosJsonArray.find(item => item.Nombre === nomb).Sexo;
+    document.querySelector("#tamanio").innerHTML = perrosJsonArray.find(item => item.Nombre === nomb).Tamaño;
+    document.querySelector("#info").innerHTML = perrosJsonArray.find(item => item.Nombre === nomb).Info;
     document.querySelector("#foto").src = "static/img/" + nom + ".jpg";
 }
 
