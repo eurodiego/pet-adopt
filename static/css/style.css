@@ -50,16 +50,17 @@ h2 {
 }
 
 #logo:hover {
-    animation: tilt-n-move-shaking 1.5s infinite;
+    animation: tilt-shaking 0.5s infinite;
+    cursor: pointer;
 }
 
-@keyframes tilt-n-move-shaking{
-    0% { transform: translate(0,0) rotate(0deg);}
-    25% { transform: translate(5px,5px) rotate(5deg);}
-    50% { transform: translate(0,0) rotate(0deg);}
-    75% { transform: translate(-5px,5px) rotate(-5deg);}
-    100% { transform: translate(0,0) rotate(0deg);}
-}
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
 
 nav {
     display: flex;
@@ -69,8 +70,12 @@ nav {
     padding: 0px 50px;
 }
 
+.req-list-style {
+    list-style-type: decimal;
+}
+
 .nav-links {
-    list-style: none;    
+    list-style: none;
     display: flex;
     gap: 50px;
 }
@@ -394,6 +399,14 @@ nav {
     }
 }
 
+p {
+    font-size: 1.2vw;
+    color: white;
+}
+
+.req-h2 {
+    font-size: 1.5vw;
+}
 @media screen and (max-width: 767px) {
     h2 {
         font-size: 3vw;

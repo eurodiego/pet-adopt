@@ -5,3 +5,5 @@ if(email != null && email.trim() !== '') {
     document.querySelector("#registrarse").href = "#";
     document.querySelector("#login").innerHTML = "";
 }
+
+document.getElementsByName("petItem").forEach((element) => element.href = element.href + "&email=" + email);

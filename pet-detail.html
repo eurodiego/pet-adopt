@@ -18,21 +18,16 @@
     <header class="header">
         <nav>
             <div id="logo">
-                <a href="./index.html">
+                <a onclick="irAHome();">
                     <i class="fas fa-dog"></i>
-                    <span class="logo-text">
-                        PET Adopt
-                    </span>
+                    <span class="logo-text">PET Adopt</span>
                 </a>
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href="#ultimos" >Ultimos ingresados</a>
+                    <a id="registrarse" href="./register.html">Registrarse</a>
                 </li>
-                <li>
-                    <a href="./register.html">Registrarse</a>
-                </li>
-                <li>
+                <li id = "login">
                     <a href="#" target="_blank" class="btn-cac">
                         <i class="fas fa-sign-in-alt"></i>
                         <span class="login-text">
@@ -72,7 +67,7 @@
                             <th colspan="2">Info</th>
                         </tr>
                     </thead>
-                    <tbody >
+                    <tbody>
                         <tr>
                             <td><strong>Nombre</strong></td>
                             <td id = "nombre2" name = "nombre2"></td>
