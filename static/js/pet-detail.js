@@ -19,6 +19,7 @@ if(nom != null && nom.trim() !== '') {
     document.querySelector("#tamanio").innerHTML = perrosJsonArray.find(item => item.Nombre === nomb).Tamaño;
     document.querySelector("#info").innerHTML = perrosJsonArray.find(item => item.Nombre === nomb).Info;
     document.querySelector("#foto").src = "static/img/" + nom + ".jpg";
+    document.querySelector("#foto").alt = nomb;
 }
 
 function irAHome() {
