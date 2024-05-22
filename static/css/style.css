@@ -166,11 +166,11 @@ nav {
 
 
 /* SELECTO AGRUPADO */
-#ultimos,#top-rated {
+#ultimos,#video {
     text-align: center;
 }
 
-#ultimos h2,#top-rated h2 {
+#ultimos h2,#video h2 {
     margin: 50px 0px;
 }
 
@@ -245,7 +245,7 @@ nav {
     margin: 3px 0px;
 }
 
-#top-rated {
+#video {
     margin: 50px 0px;
 }
 
