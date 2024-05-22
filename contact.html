@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - PET Adopt</title>
+    <link rel="shortcut icon" href="./static/img/dog.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/register.css?v=1.1">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a onclick="irAHome();">
+                    <i class="fas fa-dog"></i>
+                    <span class="logo-texto">
+                        PET Adopt
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="form-wrapper">
+            <h2>Contacto</h2>
+            <form action="#" id="formContact" method="GET" novalidate>
+                <div class="form-control">
+                    <label>Nombre</label>
+                    <input type="text" name="firstname" id="firstname" value="Pepe">
+                </div>
+                <div class="error" id="error-firstname"></div>
+
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" name="email-send" id="email-send" value="pepe@cantero.com">
+                </div>
+                <div class="error" id="error-email-send"></div>
+
+                <div class="form-control">
+                    <label>Asunto</label>
+                    <input type="text" name="asunto" id="asunto" value="Más información">
+                </div>
+                <div class="error" id="error-asunto"></div>
+
+                <div class="form-control-ta">
+                    <label>Mensaje</label>
+                    <textarea type="textarea" name="mensaje" id="mensaje" rows="5" cols="80"></textarea>
+                </div>
+                <div class="error" id="error-mensaje"></div>
+
+                <div class="form-control">
+                    <select name="barrio" id="barrio" class="form-select">
+                        <option value="">Barrio</option>
+                        <option value="1">Almagro</option>
+                        <option value="2">Barracas</option>
+                        <option value="3">Belgrano</option>
+                        <option value="4">Constitución</option>
+                        <option value="5">Devoto</option>
+                        <option value="6">Lugano</option>
+                        <option value="7">Montecastro</option>
+                        <option value="8">Parque Patricios</option>
+                        <option value="9">Recoleta</option>
+                        <option value="10">Retiro</option>
+                        <option value="11">San Telmo</option>
+                    </select>
+                </div>
+
+                <div class="form-subscribe">
+                    <div class="subscribe">
+                        <input type="checkbox" id="suscribir">
+                        <label for="subscribe">Suscribirme</label>
+                    </div>
+                </div>
+                <button type="button" id="btn-send">Enviar</button>
+                <div class="success" id="success"></div>
+                <div class="form-help">
+                    <a href="#">Necesitas ayuda?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./static/js/validation-contact.js"></script>
+</body>

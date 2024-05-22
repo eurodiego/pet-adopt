@@ -60,13 +60,34 @@ nav a img {
     color: white;
 }
 
+#logo {
+    font-weight: bold;
+}
+
+#logo a {
+    color: #FFF;
+}
+
+#logo:hover {
+    animation: tilt-shaking 0.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
 .form-wrapper {
     position: absolute;
     left: 50%;
     top: 50%;
     border-radius: 4px;
     padding: 20px 70px;
-    width: 450px;
+    width: 600px;
     transform: translate(-50%, -50%);
     background:rgba(42,42,42 ,1);
 }
@@ -98,6 +119,34 @@ form .form-control {
     padding: 0 20px;
 }
 
+form .form-control-ta {
+    height: 150px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.form-control-ta textarea {
+    height: 8em;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.form-control textarea:is(:focus, :valid) {
+    background: #444;
+    padding: 16px 20px 0;
+}
+
+.form-control textarea:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
 .form-control input:is(:focus, :valid) {
     background: #444;
     padding: 16px 20px 0;
@@ -112,10 +161,6 @@ form .form-control {
     pointer-events: none;
     color: #8c8c8c;
     transition: all 0.1s ease;
-}
-
-#birthdate{
-    padding:16px 20px 0px;
 }
 
 .form-control input:is(:focus, :valid)~label {
@@ -171,22 +216,22 @@ form button:hover {
     color: #b3b3b3;
 }
 
-form .form-terms {
+form .form-subscribe {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
 
-form .terms {
+form .subscribe {
     display: flex;
 }
 
-form .terms input {
+form .subscribe input {
     margin-right: 5px;
     accent-color: #b3b3b3;
 }
 
-form .form-terms :where(label, a) {
+form .form-subscribe :where(label, a) {
     font-size: 0.9rem;
 }
 

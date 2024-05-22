@@ -7,3 +7,4 @@ if(email != null && email.trim() !== '') {
 }
 
 document.getElementsByName("petItem").forEach((element) => element.href = element.href + "&email=" + email);
+document.getElementById("contacto").href += "?email=" + email;
