@@ -21,5 +21,8 @@ if(nom != null && nom.trim() !== '') {
 }
 
 function irAHome() {
-    window.location.href = "index.html?email=" + document.querySelector("#registrarse").innerHTML;
+    if(email)
+        window.location.href = "index.html?email=" + document.querySelector("#registrarse").innerHTML;
+    else
+        window.location.href = "index.html";
 }

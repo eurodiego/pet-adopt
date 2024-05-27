@@ -54,6 +54,21 @@ h2 {
     cursor: pointer;
 }
 
+#back {
+    margin-top: 20px;
+    width: 50%;
+    text-align: right;
+    font-weight: bold;
+}
+
+#back a {
+    color: #FFF;
+}
+
+#back:hover {
+    cursor: pointer;
+}
+
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(5deg); }
