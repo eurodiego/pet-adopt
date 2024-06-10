@@ -6,7 +6,9 @@
     --third-bis-color: #9f369f;
     --bg-input-color: #4f3157;    
 }
-
+div.request{
+    margin-left: 15px;
+}
 * {
     margin: 0;
     padding: 0;
