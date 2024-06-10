@@ -12,14 +12,14 @@
 
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/pet-detail.css">
 </head>
 <body>
     <header class="header">
         <nav>
             <div id="logo">
                 <a onclick="irAHome();">
-                    <i class="fas fa-dog"></i>
+                    <img src="/static/img/dog.ico">
                     <span class="logo-text">PET Adopt</span>
                 </a>
             </div>
@@ -39,21 +39,23 @@
         </nav>
 
     </header>
-    <main>
-        <section id="banner-pet">
-            <div>
+    <main class="detallePet">
+        <div class="contenedorPet"id="banner-pet" >
+        <section class="petImg" >
+            
+                <h2 class="nombrePerro" id="nombre1"></h2>
+            
+            
                 <img class="pet-item-img" id="foto" src="static/img/cachorro-inicio.jpg" alt="Cachorro">
-            </div>
-            <div>
-                <h2 id="nombre1"></h2>
-            </div>
+            
+            
         </section>
 
-        <section id="more-info">
-            <div>
-                <table>
-                    <thead>
-                        <tr>
+        <section  id="more-info">
+            <div class="infoPet">
+                <table class="petDetail" >
+                    <thead >
+                        <tr >
                             <th colspan="2">Info</th>
                         </tr>
                     </thead>
@@ -79,16 +81,26 @@
                             <td id = "info"></td>
                         </tr>
                     </tbody>
-                </table>
-                <div id="back">
-                    <a onclick="irAHome();">
-                        <i class="fas fa-back"></i>
-                        <span class="logo-text">Volver</span>
-                    </a>
-                </div>
+                </table></div>
+            
             </div>
         </section>
-    </main>    
+    </main>   
+    <footer id="footer">
+        <nav>
+            <div></div>
+            <ul class="nav-links">
+                <li>
+                    <a href="requisitos.html" target="_blank">Requisitos para adoptar
+                        <i class="fa fa-share-square fa-white"></i>
+                    </a>
+                </li>
+                <li>
+                    <a id="contacto" href="contact.html">Contacto</a>
+                </li>
+            </ul>            
+        </nav>
+    </footer>
     <script type="text/javascript" src="static/js/pet-detail.js"></script>
 </body>
 </html>
